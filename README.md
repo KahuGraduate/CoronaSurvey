@@ -32,25 +32,41 @@ We will create database migrations through knex to create a database. We will us
 ## Views 
 
 **base** | description
----|---
+---|:-:
 survey | collects responses and saves them
 data | displays data in many different charts (*made of many components*)
 info | helpful blurb page
-**stretch** | description
+**stretch** | **description**
 login | a login page, logins the user in and provides json token
 register | creates and stores user profile
 profile | shows user data compared over time, can see data by dates and general trends
 
 ## Reducers
 
-- Questions?
+**name** | **description**
+---|:-:
+questions | 
+results | 
 
 ## Actions
 
-
+**name** | **reducer** | **description**
+---|--|:-:
+get_questions | question | get all questions (question, answers)
+save_answer | answer | save an answer to a question
+get_answers | answer |  get all answers to all questions
+**stretch** | --- | 
+sort_answers | answer | sort all the answers to the questions
 
 ## API
 
+Method | Route | Usage | Response 
+---|---|---|---
+Get | api/v1/questions | Gets all the questions | Gets an array of objects
+Get | api/v1/results | Gets ..
+**stretch** | --- | --- | ---
+
 ## DB
 
-##
+
+
