@@ -4,12 +4,13 @@
 
 We are going to need the following:
 
+* Node
 * React
 * Redux
 * Express
 * Knex.js (SQL)
 * React-Router
-* Send-Grid
+* Chartist
 
 We will create database migrations through knex to create a database. We will use seed files to insert test data into our database.
 
