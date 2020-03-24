@@ -11,6 +11,8 @@ We are going to need the following:
 * Knex.js (SQL)
 * React-Router
 * Chartist
+* react-recaptcha
+* **(STRETCH)** Passport
 
 We will create database migrations through knex to create a database. We will use seed files to insert test data into our database.
 
@@ -64,10 +66,25 @@ sort_answers | answer | sort all the answers to the questions
 Method | Route | Usage | Response 
 ---|---|---|---
 Get | api/v1/questions | Gets all the questions | Gets an array of objects
-Get | api/v1/results | Gets ..
+Get | api/v1/results | Gets all the results for a question | Gets an array of object
+Post | api/v1/answers/:id | saves answer id 
 **stretch** | --- | --- | ---
+Get | api/v1/answers/#param | sorts data by param
+Get | api/v1/profile/answers | gets users answers and shows graphs of their results over time
+
 
 ## DB
+
+[this is how to do array in knex](https://stackoverflow.com/questions/50118196/how-to-insert-array-data-type-using-knex-and-potsgres/50118361)
+
+
+DB | fields 
+---|---
+question | question-id, question-string, answer-format, answer-array (array, changes format depends on the first result in the array) 
+anwsers | answer-id, question-id, user-id (*optional*), answer-array
+**stretch** | 
+user | user_id, username, age, location, occupation, gender, ethnicity, 
+auth | whatever passport wants for auth
 
 
 
